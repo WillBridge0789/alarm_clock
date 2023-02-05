@@ -19,7 +19,15 @@ body, html {
 #clock {
     font-family: 'Inconsolata', sans-serif;
     font-size: 15vw;
-    color: rgb(120, 74, 129);
+    background-image: linear-gradient(180deg,
+        rgba(223, 143, 250, 1) 0%,
+        rgba(104, 50, 122, 1) 50%,
+        rgba(75, 29, 86, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .controls {
