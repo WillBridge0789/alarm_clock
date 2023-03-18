@@ -1,4 +1,5 @@
 const display = document.getElementById('clock');
+const audio = new Audio('sound/alarm.wav');
 let alarmTime = null;
 let alarmTimeout = null;
 
@@ -30,7 +31,7 @@ function setAlarm() {
 
         if(timeToAlarm > current) {
             const timeout = timeToAlarm.getTime() - current.getTime();
-            alarmTimeout = setTimeout(() => timeout);
+            alarmTimeout = setTimeout(() => audio.play(), timeout);
             alert('Alarm set');
         }
     }
